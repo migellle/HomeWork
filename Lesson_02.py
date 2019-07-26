@@ -2,26 +2,29 @@
 школьнику? Сколько яблок останется в корзинке? Программа получает на вход числа `n` и `k` и должна вывести искомое
 количество яблок (два числа).'''
 
-n = 3
-k = 155
+print('Please enter an integer number: first for school boy, second for apples:')
+n = int(input())
+k = int(input())
 x = k // n
 y = k % n
-print(x, y)
+print('Result is: ' + str(x), str(y))
 
 '''2. Дано число n. С начала суток прошло n минут. Определите, сколько часов и минут будут показывать электронные
 часы в этот момент. Программа должна вывести два числа: количество часов (от 0 до 23) и количество минут (от 0 до 59).
 Учтите, что число n может быть больше, чем количество минут в сутках.'''
 
-n = 2813
+print('Please enter an integer number for time')
+n = int(input())
 x = n // 60
 y = n % 60
 z = x % 24
-print(z, y)
+print('Result is: ' + str(z), str(y))
 
 '''3. Напишите программу, которая приветствует пользователя, выводя слово `Hello`, введенное имя и знаки препинания
 по образцу: `Hello Kitty!`'''
 
-print("'Hello'")
+print('Please enter your name:')
+print("'Hello " + input() + "!'")
 
 '''4. Напишите программу, которая считывает целое число и выводит текст, аналогичный приведенному в примере
 (пробелы важны!). Первая строка содержит следующее значение, а втора строка содержит предыдущее значение введёного
@@ -37,11 +40,10 @@ print("'Hello'")
         The next number for the number 0 is 1.
         The previous number for the number 0 is -1.'''
 
-a = 1234
-#print('Please enter an integer number: ' + (str)(a))
-print('Please enter an integer number:',a)
-print('Please enter an integer number:',a, 'is', a+1)
-print('Please enter an integer number:',a, 'is', a-1)
+print('Please enter an integer number:')
+a = int(input())
+print('The next number for the number',a, 'is', a+1)
+print('The previous number for the number',a, 'is', a-1)
 
 '''5. В школе решили набрать три новых математических класса. Так как занятия по математике у них проходят в одно и то 
 же время, было решено выделить кабинет для каждого класса и купить в них новые парты. За каждой партой может сидеть 
@@ -49,10 +51,13 @@ print('Please enter an integer number:',a, 'is', a-1)
 чтобы их хватило на всех учеников? Программа получает на вход три натуральных числа: количество учащихся в каждом из 
 трех классов.'''
 
-a = 21
-b = 23
-c = 25
+print('Please enter an integer number, three times, for indicate school boys:')
+a = int(input())
+b = int(input())
+c = int(input())
 
 s = a//2 + b//2 + c//2 + a%2 + b%2 + c%2
 
 print(s)
+
+print('Well done! :)')
