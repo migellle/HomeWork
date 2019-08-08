@@ -38,8 +38,8 @@ print("'Hello " + input("Введите своё имя: ") + "!'")
         The previous number for the number 0 is -1.'''
 
 a = int(input('Please enter an integer number:' ))
-print('The next number for the number {}'.format(a + 1))
-print('The previous number for the number {}'.format(a - 1))
+print('The next number for the number {} is {}.'.format(a, a + 1))
+print('The previous number for the number {} is {}.'.format(a, a - 1))
 
 '''5. В школе решили набрать три новых математических класса. Так как занятия по математике у них проходят в одно и то 
 же время, было решено выделить кабинет для каждого класса и купить в них новые парты. За каждой партой может сидеть 
