@@ -108,3 +108,13 @@ print(lst)
 '''10.	Используя циклы и оператор `IF` написать функции для построения фигур изображеных на рисунке ниже. Функции принимают 
 в качестве аргумента высоту фигуры в символах и на основании этого строят фигуры.
 ![ресунке](img/rhombus.png)'''
+
+number = int(input('Please enter a number: '))
+
+for i in range(number):
+    for j in range(number):
+        if (i <= number // 2 and j <= i + number // 2 and j >= number // 2 - i or j == i - number//2 or j == number // 2 - i + number - 1 or j == number // 2):
+            print('* ', end='')
+        else:
+            print('  ', end='')
+    print()
